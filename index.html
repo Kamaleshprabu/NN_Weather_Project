@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="body">
+    <div class="header">
+        <h2>Weather <sup>pro</sup></h2>
+        <div class="search">
+            <input id="cityname" type="search" placeholder="Enter City">
+            <button id="find"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="weather">
+            <img class="weather_icon" src="./image/rain.png" alt="">
+            <h1 class="temp"></h1>
+            <h3 class="feelslike"></h3>
+            <h3 class="city"></h3>
+        </div>
+        <div class="details">
+            <div class="block">
+                <img src="./image/weather.webp" alt="">
+                <h3 class="status"></h3>
+                <p>Weather</p>
+            </div>
+            <div class="block">
+                <img src="./image/humidity.webp" alt="">
+                <h3 class="humidity"></h3>
+                <p>Humidity</p>
+            </div>
+            <div class="block">
+                <img src="./image/wind.webp" alt="">
+                <h3 class="wind"></h3>
+                <p>Wing Speed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Developed By</p>
+        <h3>KamaleshPrabu</h3>
+    </div>
+
+    <script src="./weather.js"></script>
+</body>
+</html>
