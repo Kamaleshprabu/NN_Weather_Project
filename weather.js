@@ -21,8 +21,8 @@ function changeDetails(data){
     document.querySelector('.feelslike').textContent = "Feels Like: " + Math.round(data.main.feels_like) + "°c";
     document.querySelector('.city').textContent = data.name;
     document.querySelector('.status').textContent = data.weather[0].main;
-    document.querySelector('.humidity').textContent = data.main.humidity + "%";
-    document.querySelector('.wind').textContent = data.wind.speed + " km/h";
+    document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
+    document.querySelector('.wind').innerHTML = data.wind.speed + "<span> km/h</span>";
 
     changeImage(data.weather[0].main)
 }
