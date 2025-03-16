@@ -28,81 +28,52 @@ function changeDetails(data){
 }
 
 function changeImage(weather){
+
+    body.classList.remove("cloud");
+    body.classList.remove("clear");
+    body.classList.remove("drizzle");
+    body.classList.remove("mist");
+    body.classList.remove("snow");
+    body.classList.remove("rain");
+    body.classList.remove("haze");
+    body.classList.remove("smoke");
+    body.classList.remove("all");
+    
     if(weather == "Clouds"){
         weatherIcon.src = "image/clouds.png";
         body.classList.add("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("drizzle");
-        body.classList.remove("mist");
-        body.classList.remove("snow");
-        body.classList.remove("rain");
-        body.classList.remove("haze");
     }
     else if(weather == "Clear"){
         weatherIcon.src = "image/clear.png";
         body.classList.add("clear");
-        body.classList.remove("cloud");
-        body.classList.remove("drizzle");
-        body.classList.remove("mist");
-        body.classList.remove("snow");
-        body.classList.remove("rain");
-        body.classList.remove("haze");
-
     }
     else if(weather == "Drizzle"){
         weatherIcon.src = "image/drizzle.png";
         body.classList.add("drizzle");
-        body.classList.remove("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("mist");
-        body.classList.remove("snow");
-        body.classList.remove("rain");
-        body.classList.remove("haze");
-
     }
     else if(weather == "Mist"){
         weatherIcon.src = "image/mist.png";
         body.classList.add("mist");
-        body.classList.remove("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("drizzle");
-        body.classList.remove("snow");
-        body.classList.remove("rain");
-        body.classList.remove("haze");
-
     }
     else if(weather == "Snow"){
         weatherIcon.src = "image/snow.png";
         body.classList.add("snow");
-        body.classList.remove("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("drizzle");
-        body.classList.remove("mist");
-        body.classList.remove("rain");
-        body.classList.remove("haze");
-
     }
     else if(weather == "Rain"){
         weatherIcon.src = "image/rain.png";
         body.classList.add("rain");
-        body.classList.remove("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("drizzle");
-        body.classList.remove("mist");
-        body.classList.remove("snow");
-        body.classList.remove("haze");
-
     }
     else if(weather == "Haze"){
         weatherIcon.src = "image/haze.png";
-        body.classList.remove("rain");
-        body.classList.remove("cloud");
-        body.classList.remove("clear");
-        body.classList.remove("drizzle");
-        body.classList.remove("mist");
-        body.classList.remove("snow");
         body.classList.add("haze");
-
+    }
+    else if(weather == "Smoke"){
+        weatherIcon.src = "image/smoke.png";
+        body.classList.add("smoke");
+    }
+    else{
+        weatherIcon.src = "image/all.png";
+        body.classList.all("all");
     }
 }
 

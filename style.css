@@ -61,6 +61,16 @@ body{
     background-size: cover;
 }
 
+.smoke{
+    background: url("./image/smoke_bg.webp") no-repeat center fixed;
+    background-size: cover;
+}
+
+.all{
+    background: url("./image/all_bg.webp") no-repeat center fixed;
+    background-size: cover;
+}
+
 .header{
     width: 100%;
     display: flex;
@@ -189,8 +199,8 @@ body > .container{
 }
 
 .block > img{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 .block > i{
@@ -252,7 +262,7 @@ body > .container{
     }
 
     .weather_icon{
-        width: 60%;
+        width: 80%;
         height: 100%;
         filter: drop-shadow(2px 4px 7px #000);
         margin-bottom: 30px;
