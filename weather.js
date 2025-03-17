@@ -91,8 +91,4 @@ function error404(error){
     document.querySelector('.wind').textContent = "";
 }
 
-document.getElementById("find").addEventListener("click", () => {
-    search();
-});
-
-search();
+setInterval(() => search(), 500);

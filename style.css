@@ -114,15 +114,6 @@ body > .container{
     border: 2px solid #000;
 }
 
-#find{
-    padding: 8px 12px;
-    border-radius: 50px;
-    font-size: medium;
-    outline: none;
-    border: none;
-    border: 2px solid #000;
-}
-
 .weather{
     width: 50%;
     display: flex;
