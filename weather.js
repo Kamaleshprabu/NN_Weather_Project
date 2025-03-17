@@ -2,6 +2,7 @@ const ApiKey = "eb26233fc730169b8d2dc20d8ce721a6";
 const weatherIcon = document.querySelector(".weather_icon");
 const body = document.querySelector(".body");
 
+//For Searching
 function search(){
     let cityName = "New delhi";
     let cityName_tag = document.getElementById('cityname');
@@ -12,6 +13,7 @@ function search(){
     fetchData(cityName)
 }
 
+//To fetch data from API
 function fetchData(cityName){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${ApiKey}&units=metric`)
     .then((res) => res.json())
@@ -19,6 +21,7 @@ function fetchData(cityName){
     .catch((error) => error404(error));
 }
 
+//For Changing the weather details
 function changeDetails(data){
     console.log(data);
     document.querySelector('.temp').textContent = Math.round(data.main.temp) + "°c";
@@ -31,8 +34,8 @@ function changeDetails(data){
     changeImage(data.weather[0].main)
 }
 
+//To change icons for UX
 function changeImage(weather){
-
     body.classList.remove("cloud");
     body.classList.remove("clear");
     body.classList.remove("drizzle");
@@ -81,6 +84,7 @@ function changeImage(weather){
     }
 }
 
+//For search Error
 function error404(error){
     weatherIcon.src = "image/404.webp";
     document.querySelector('.status').textContent = "";
@@ -91,4 +95,5 @@ function error404(error){
     document.querySelector('.wind').textContent = "";
 }
 
+//For Dynamic Updates 
 setInterval(() => search(), 500);
