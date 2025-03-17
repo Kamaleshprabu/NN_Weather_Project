@@ -9,6 +9,10 @@ function search(){
         cityName = cityName_tag.value.trim();
     console.log(cityName);
 
+    fetchData(cityName)
+}
+
+function fetchData(cityName){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${ApiKey}&units=metric`)
     .then((res) => res.json())
     .then((data) => changeDetails(data))
@@ -38,7 +42,7 @@ function changeImage(weather){
     body.classList.remove("haze");
     body.classList.remove("smoke");
     body.classList.remove("all");
-    
+
     if(weather == "Clouds"){
         weatherIcon.src = "image/clouds.png";
         body.classList.add("cloud");
@@ -78,7 +82,7 @@ function changeImage(weather){
 }
 
 function error404(error){
-    weatherIcon.src = "image/404.jpg";
+    weatherIcon.src = "image/404.webp";
     document.querySelector('.status').textContent = "";
     document.querySelector('.temp').textContent = "";
     document.querySelector('.feelslike').textContent = "";
