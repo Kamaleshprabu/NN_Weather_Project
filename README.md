@@ -9,8 +9,8 @@ Features -
       Fetches data from a reliable weather API
       
 Technologies Used -
-      Frontend: HTML, CSS, JavaScript
-      API: OpenWeatherMap / Any other API you used
+      Frontend: HTML, CSS, JavaScript, 
+      API: OpenWeatherMap
       
 Screenshot -
       <img width="959" alt="image" src="https://github.com/user-attachments/assets/a69bb502-ff4f-470e-bedd-0022da42b64c" />
