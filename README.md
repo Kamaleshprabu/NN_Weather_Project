@@ -19,7 +19,7 @@
 
 <h3>Installation & Setup -</h3>
       <h5>  Clone the repository:</h5>
-      <p>  git clone https://github.com/Kamaleshprabu/weather-app.git</p>
+      <p>  git clone https://github.com/Kamaleshprabu/NN_Weather_Project.git</p>
       <p>  cd weather-app</p>
       <p>  Open index.html in a browser or run a local server (if applicable).</p>
       <p>  (If using an API) Get an API key from OpenWeatherMap and replace it in the code.</p>
