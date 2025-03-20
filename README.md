@@ -18,7 +18,7 @@
       <img width="600px" height="300px" alt="image" src="https://github.com/user-attachments/assets/a69bb502-ff4f-470e-bedd-0022da42b64c" />
 
 <h3>Installation & Setup -</h3>
-      h5>  Clone the repository:</h5>
+      <h5>  Clone the repository:</h5>
       <p>  git clone https://github.com/kamaleshprabu/weather-app.git</p>
       <p>  cd weather-app</p>
       <p>  Open index.html in a browser or run a local server (if applicable).</p>
