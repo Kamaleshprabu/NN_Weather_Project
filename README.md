@@ -15,7 +15,8 @@
       <p>  API: OpenWeatherMap</p>
       
 <h3>Screenshot -</h3>
-      <img width="600px" height="300px" alt="image" src="https://github.com/user-attachments/assets/a69bb502-ff4f-470e-bedd-0022da42b64c" />
+     <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/efa8e332-5df3-4164-8385-ce07171c82b5" />
+
 
 <h3>Installation & Setup -</h3>
       <h5>  Clone the repository:</h5>
